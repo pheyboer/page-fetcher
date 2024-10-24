@@ -14,7 +14,7 @@ needle.get(host, (error, response, body) => {
     if (err) {
       console.error(`Error:`, err);
     } else {
-      console.log(`File saved at ${filePath}`);
+      console.log(`Downloaded and saved ${body.length} bytes to ${filePath}`);
     }
   });
 });
